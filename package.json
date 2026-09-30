@@ -1,0 +1,46 @@
+{
+  "name": "dahua-p2p",
+  "version": "1.0.0",
+  "description": "Dahua/Intelbras (Easy4ip, Mibo Smart) P2P tunnel and RTSP client for Node.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "dahua-p2p": "dist/cli.js"
+  },
+  "author": "Luan (ludufre) Freitas",
+  "bugs": {
+    "url": "https://github.com/ludufre/dahua-p2p/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ludufre/dahua-p2p.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "dahua",
+    "intelbras",
+    "mibo",
+    "easy4ip",
+    "p2p",
+    "ptcp",
+    "rtsp",
+    "camera"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
